@@ -1,0 +1,11 @@
+@font-face { 
+  font-family: 'WebSymbolsLigaRegular';
+    src: url(<%= asset_path 'fonts/websymbolsligaregular.eot' %>);
+    src: url(<%= asset_path 'fonts/websymbolsligaregular.eot?#iefix' %>) format('embedded-opentype'),
+      url(<%= asset_path 'fonts/websymbolsligaregular.woff' %>) format('woff'),
+      url(<%= asset_path 'fonts/websymbolsligaregular.ttf' %>) format('truetype'),
+      url(<%= asset_path 'fonts/websymbolsligaregular.svg#WebSymbolsRegular' %>) format('svg');
+}
+
+text-rendering: optimizeLegibility;
+.web_symbol { font-family: 'WebSymbolsLigaRegular'; }
