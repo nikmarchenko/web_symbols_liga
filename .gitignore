@@ -1,4 +1,7 @@
 .bundle/
+*/.DS_Store
+.DS_Store
+
 log/*.log
 pkg/
 spec/dummy/db/*.sqlite3
