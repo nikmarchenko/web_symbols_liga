@@ -7,5 +7,11 @@ module WebSymbolsLiga
       g.integration_tool :rspec
     end
 
+    initializer 'web_symbols_liga.setup_helpers' do |app|
+	    app.config.to_prepare do
+	      ActionController::Base.send :helper, WebSymbolsLigaHelper
+	    end
+	 end
+
   end
 end
